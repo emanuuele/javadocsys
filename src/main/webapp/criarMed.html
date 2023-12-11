@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Cadastro de Medicamentos</title>
+        
+    </head>
+    <body>
+        <div><h1>Criamos esse sistema para você se organizar melhor com suas consultas</h1>
+        </div>
+        <div class = "container">
+            <h2>Dados dos medicamentos</h2>
+        </div>
+        <div> <p>Por favor, preencha os dados do medicamento</p> </div>
+        <section id="form-paciente" class="pady-3" >
+        <form action="PacienteServlet" method="POST" name="frmMed"> 
+            <div class="campos-form">
+                <label for = "nomemed">Nome do medicamento</label>
+                <input type="text" name="nomemed" id="nomemed" onclick="validar2()">
+            </div>
+            	<label for="preco">Preço</label>
+                <input type="number" name="preco" step="0.010" onclick="validar2()">
+            <div>
+                <label for="qtd">Estoque</label>
+                <input type="number" name="qtd" id ="qtd" onclick="validar2()">
+                
+            </div>
+            <button>Cadastrar</button> 
+        </form>
+        <script src="scripts/validador.js"></script>
+        </section>
+    </body>
+</html>
